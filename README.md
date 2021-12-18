@@ -1,11 +1,10 @@
 # **JavaScript Challenge: JavaScript and Dom Manipulation**
 
 ## **Level 1: Automatic Table and Date Search**
+<hr>
 
 <br>
-Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
-
-<br>
+Using the UFO <a href="UFO-level-1/static/js/data.js"> dataset </a> provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
 
 <br>
 
@@ -32,6 +31,7 @@ Use a date form in your HTML document and write JavaScript code that will listen
  <br>
 
  ## **Level 2: Multiple Search Categories**
+ <hr>
 
 <br>
 
@@ -41,7 +41,7 @@ Using multiple input tags and/or select dropdowns, write JavaScript code so the 
  * State
  * Country
  * Shape
- * Comment 
+
 
 
 
