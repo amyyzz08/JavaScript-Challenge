@@ -20,9 +20,9 @@ var form=d3.select("form");
 var button=d3.select("#filter-btn");
 
 // Creating event handlers
-form.on("sumbit", enter());
+form.on("sumbit", enter);
 
-button.on("click", enter());
+button.on("click", enter);
 
 
 // Function will append filtered data into table based on user input
@@ -36,7 +36,7 @@ function enter() {
 
     var userInput= d3.select("input");
     var inputValue=userInput.property("value");
-
+    
     // Filtering
     var filteredData= tableData.filter(function (input) {
         if (inputValue === input.datetime ||
