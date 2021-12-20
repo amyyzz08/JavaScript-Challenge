@@ -37,6 +37,10 @@ Using multiple input tags and/or select dropdowns, write JavaScript code so the 
  * Country
  * Shape
 
+<br>
+
+![](UFO-level-2/static/images/second.png)
+
 
 
 

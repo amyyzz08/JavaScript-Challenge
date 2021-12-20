@@ -34,16 +34,19 @@ function enter() {
     // Clears the previous table data
     tbody.html("");
 
-    var userInput= d3.select("input");
-    var inputValue=userInput.property("value");
+    var dateinput= d3.select("#datetime").property("value");
+    var cityinput= d3.select("#city").property("value");
+    var stateinput= d3.select("#state").property("value");
+    var countryinput= d3.select("#country").property("value");
+    var shapeinput= d3.select("#shape").property("value");
     
     // Filtering
     var filteredData= tableData.filter(function (input) {
-        if (inputValue === input.datetime ||
-            inputValue === input.city ||
-            inputValue === input.state ||
-            inputValue === input.country ||
-            inputValue === input.shape) {
+        if (dateinput === input.datetime ||
+            cityinput === input.city ||
+            stateinput === input.state ||
+            countryinput === input.country ||
+            shapeinput === input.shape) {
             
             // Returning the results based on user's input
             var filteredrow= tbody.append("tr");
