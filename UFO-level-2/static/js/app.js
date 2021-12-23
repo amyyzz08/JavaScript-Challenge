@@ -41,12 +41,24 @@ function enter() {
     var shapeinput= d3.select("#shape").property("value");
     
     // Filtering
-    var filteredData= tableData.filter(function (input) {
-        if (dateinput === input.datetime ||
-            cityinput === input.city ||
-            stateinput === input.state ||
-            countryinput === input.country ||
-            shapeinput === input.shape) {
+    var filteredData= tableData.forEach(function (input) {
+        var matchedFound = true 
+        if ((dateinput != "" && dateinput != input.datetime)){
+            matchedFound= false 
+        }
+        if ((cityinput != "" && cityinput != input.city)){
+            matchedFound= false 
+        }
+        if ((stateinput != "" && stateinput != input.state)){
+            matchedFound= false 
+        }
+        if ((countryinput != "" && countryinput != input.country)){
+            matchedFound= false 
+        }
+        if ((shapeinput != "" && shapeinput != input.shape)){
+            matchedFound= false 
+        }
+        if (matchedFound){
             
             // Returning the results based on user's input
             var filteredrow= tbody.append("tr");

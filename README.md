@@ -39,7 +39,7 @@ Using multiple input tags and/or select dropdowns, write JavaScript code so the 
 
 <br>
 
-![](UFO-level-2/static/images/second.png)
+![](UFO-level-2/static/images/filter.png)
 
 
 
